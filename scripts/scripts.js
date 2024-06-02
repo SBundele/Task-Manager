@@ -12,10 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function createRow(task) {
   let tableRow = document.createElement("tr");
+  let color = task.status === 'pending❌' ? "red" : task.status === 'in-progress' ? "orange" : "green"
   tableRow.innerHTML = `
         <td>${task.title}</td>
         <td>${task.priority}</td>
-        <td><button onclick="changeStatus('${task.title}')" class="status">${task.status}</button></td>
+        <td><button onclick="changeStatus('${task.title}')" class="status" style="background-color: ${color}">${task.status}</button></td>
         <td><button onclick="removeTask('${task.title}')" class="remove">Remove</button></td>
         `;
   tBody.append(tableRow);

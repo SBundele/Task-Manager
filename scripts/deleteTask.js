@@ -33,10 +33,16 @@ function createRow(tasks){
     tbody.innerHTML = null
     tasks.forEach((task) => {
         let tableRow = document.createElement("tr");
+        let color =
+          task.status === "pending❌"
+            ? "red"
+            : task.status === "in-progress"
+            ? "orange"
+            : "green";
         tableRow.innerHTML = `
         <td>${task.title}</td>
         <td>${task.priority}</td>
-        <td>${task.status}</td>
+        <td style="background-color: ${color}">${task.status}</td>
         <td><button onclick="restoreTask('${task.title}')" class="restore">Restore</button></td>
         <td><button onclick="deleteTask('${task.title}')" class="remove">Delete</button></td>
         `;

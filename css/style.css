@@ -59,10 +59,13 @@ select {
   cursor: pointer;
   width: 100%;
   padding: 10px 5px;
-  background-color: purple;
+  background-color: rgb(205, 8, 205);
   color: aliceblue;
   border: none;
   border-radius: 5px;
+}
+#addBtn:hover{
+    background-color: rgb(233, 9, 233);
 }
 .task-table {
   width: 30%;
@@ -89,17 +92,23 @@ th {
   padding: 10px;
 }
 .status, .restore{
-    background-color: rgb(51, 228, 169);
+    cursor: pointer;
+    background-color: rgb(6, 190, 129);
     padding: 5px 8px;
     border: none;
     border-radius: 5px;
+    color: white;
 }
 .remove{
+    cursor: pointer;
     background-color: red;
     color: white;
     padding: 5px 8px;
     border: none;
     border-radius: 5px;
+}
+.remove:hover{
+    background-color: rgb(244, 24, 24);
 }
 
 
@@ -109,6 +118,7 @@ th {
     margin: 50px auto 0;
     border-collapse: collapse;
     text-align: center;
+    color: aliceblue;
 }
 .filters{
     margin-top: 50px;
