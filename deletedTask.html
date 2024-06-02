@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./deletedTask.html">Deleted Task</a></li>
+      </ul>
+    </nav>
+
+    <div class="filters">
+        <div>
+            <select id="priority-filter">
+                <option value="">Select By Priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <div>
+            <select id="status-filter">
+                <option value="">Filter by status</option>
+                <option value="pending❌">Pending</option>
+                <option value="in-progress">In-progress</option>
+                <option value="completed">Completed</option>
+            </select>
+        </div>
+    </div>
+
+    <main class="main">
+        <table class="table">
+            <thead>
+                <th>Title</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Restore</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </main>
+
+    <script src="./scripts/deleteTask.js"></script>
+  </body>
+</html>

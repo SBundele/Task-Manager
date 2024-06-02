@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./deletedTask.html">Deleted Task</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <div class="input-div">
+          <div>
+            <label for="task-box">Enter Task:</label>
+            <input type="text" id="task-box" placeholder="Enter Task" />
+          </div>
+          <div>
+            <label for="status">Priotity:</label>
+            <select id="status">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <div>
+            <button id="addBtn">Add Task</button>
+          </div>
+        </div>
+
+        <table class="task-table">
+          <thead class="table-head">
+            <th>Title</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Action</th>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

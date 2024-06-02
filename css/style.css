@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(59, 113, 160);
+}
+.navbar {
+  background-color: rgb(205, 8, 205);
+  padding: 15px 10px;
+}
+.navbar > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.navbar > ul > li > a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 18px;
+}
+.navbar > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin-top: 5%;
+}
+.input-div {
+  width: 20%;
+  position: relative;
+  top: 20%;
+  left: 20%;
+  border: 1px solid white;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+.input-div label {
+  color: aliceblue;
+  font-size: 18px;
+}
+.input-div input,
+select {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+}
+.input-div select {
+  cursor: pointer;
+}
+.input-div > div:last-child {
+  margin-top: 40px;
+}
+#addBtn {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 5px;
+  background-color: purple;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+}
+.task-table {
+  width: 30%;
+  position: absolute;
+  top: 22%;
+  left: 60%;
+  color: aliceblue;
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+}
+.task-table > thead,
+th {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 10px;
+  background-color: rgb(66, 192, 192);
+}
+#table-body {
+  vertical-align: baseline;
+}
+#table-body > tr > td {
+  border: 1px solid white;
+  padding: 10px;
+}
+.status, .restore{
+    background-color: rgb(51, 228, 169);
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+}
+.remove{
+    background-color: red;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Deleted Task */
+.table{
+    width: 60%;
+    margin: 50px auto 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+.filters{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
